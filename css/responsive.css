@@ -1,0 +1,61 @@
+/************************************************
+            Responsive CSS
+***********************************************/
+
+/* Mobile Device */
+@media only screen and ( max-width:767px){
+    .bannar {
+        display: flex;
+        flex-direction: column;
+      }
+
+      nav{
+        margin-bottom: 40px;
+      }
+
+      .iner-navbar{
+        
+      }
+
+      .banner-righ{
+        margin-left: 0px;
+      }
+
+      .first{
+        flex-direction: column;
+      }
+
+  
+      .footer-bottom{
+        flex-direction: column;
+      }
+
+      .single-product-under{
+        flex-direction: column;
+      }
+
+      .product-texts{
+        margin-left: 0;
+        margin-top: 0;
+      }
+      .office-location{
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+
+      .banner-right img{
+        margin:  0px;
+        padding: 0px;
+      }
+
+      .product{
+        flex-direction: column;
+      }
+
+      .single-product-side{
+        margin-top: 30px;
+        margin-left: 80px;
+        text-align: center;
+        
+      }
+}
