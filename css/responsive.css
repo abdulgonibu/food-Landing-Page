@@ -4,6 +4,10 @@
 
 /* Mobile Device */
 @media only screen and ( max-width:767px){
+
+  .sm-hidden{
+    display: none;
+  }
     .bannar {
         display: flex;
         flex-direction: column;
@@ -11,10 +15,6 @@
 
       nav{
         margin-bottom: 40px;
-      }
-
-      .iner-navbar{
-        
       }
 
       .banner-righ{
@@ -28,6 +28,10 @@
   
       .footer-bottom{
         flex-direction: column;
+      }
+
+      .container-padding {
+        padding: 30px 50px;
       }
 
       .single-product-under{
@@ -58,4 +62,64 @@
         text-align: center;
         
       }
+
+
+      .mobile-navbar {
+        width: 0px;
+        height: 100vh;
+        background: #fff;
+        position: absolute;
+        left: -45px;
+        top: -16px;
+        text-align: left;
+        box-shadow: 10px 10px 20px #8080805e;
+        overflow-y: auto;
+        transition: .5s all;
+    }
+
+    .mobile-navbar-sidebar-open {
+        width: 300px;
+    }
+
+    .mobile-navbar li {
+        display: block !important;
+    }
+
+    .mobile-navbar li:nth-child(2) {
+        margin-top: 4rem;
+    }
+
+    .mobile-navbar li a {
+        display: block !important;
+        padding: 20px;
+        margin: 20px;
+        background-color: transparent;
+        border-bottom: 2px solid transparent;
+        transition: 0.5s all;
+        border-radius: 30px;
+    }
+
+    .mobile-navbar li a:hover {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        border-bottom: 2px solid red;
+    }
+
+    .navbar-toggle {
+        margin-top: 12px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
 }
+
+
+@media only screen and ( min-width:768px){
+
+  .md-hidden{
+    display: none;
+  }
+  
+    
+}
+

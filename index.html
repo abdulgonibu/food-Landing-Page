@@ -6,35 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
-        integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/regular.min.css"
-        integrity="sha512-sWLOh8QiEOmwfP3jd0n7AneUOa6XKif5g8GU8FqdFMIbr6rYBt1PKWBp/Wv4E6PQ6N9lFtVAndujl9HbniDTog=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body>
-    <div class="wrapper" id="#wrapper">
-        <header>
+    <div id="wrapper">
+       
             <nav class="navbar">
                 <div class="iner-navbar">
                     <div class="navbar-left">
-                        <a href="">
-                            <img id="#home" src="images/Foo.jpg" alt="">
+                        <a href="#home">
+                            <img src="images/Foo.jpg" alt="">
                         </a>
                     </div>
+                    
                     <div class="navbar-right">
-                        <ul>
+                        <span class="md-hidden navbar-toggle text-white">
+                            <i class="fas fa-bars" id="toggle-icon"></i>
+                        </span>
+                        <ul class="sm-hidden">
+                           
                             <li>
                                 <a href="#home">Home</a>
                             </li>
@@ -58,11 +53,38 @@
                                 <span class="two">2</span>
                             </li>
                         </ul>
+
+                        <ul class="md-hidden mobile-navbar">
+
+                            <li>
+                                <a href="">
+                                    <img id="#home" src="images/Foo.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#menu">Menu</a>
+
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+
+                            </li>
+                            <li class="shopp">
+                                <a href="#shop">Shop</a>
+
+                            </li>
+                           
+                        </ul>
+
                     </div>
 
                 </div>
             </nav>
             <!-- //banner// -->
+            <header>
             <div id="home" class="bannar container-padding">
                 <div class="banner-left">
                     <div class="first">
@@ -404,6 +426,8 @@
     </footer>
 
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
